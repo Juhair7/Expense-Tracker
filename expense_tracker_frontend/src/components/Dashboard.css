@@ -1,0 +1,225 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Darker background for sleek look */
+  color: #e0e0e0; /* Softer white for text */
+}
+
+/* Main container to fit the whole viewport height */
+.dashboard-main-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Sidebar Navigation */
+.sidebar-navigation {
+  width: 250px;
+  background-color: #25272b; /* Slightly lighter for contrast */
+  color: #ffffff; /* Bright white for sidebar text */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
+  border-right: 1px solid #333;
+}
+
+.navigation-links-container {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.dashboard-header {
+  color: #00BFFF; /* Bright cyan for header */
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+}
+.dashboard-header-sidebar {
+  color: #00BFFF; /* Bright cyan for sidebar header */
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-style: oblique;
+  text-align: center;
+}
+
+/* Links inside sidebar */
+.sidebar-navigation a {
+  color: #D0D0D0; /* Light gray for link color */
+  padding: 10px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-navigation a:hover {
+  color: #0f0202; /* White text on hover */
+}
+
+/* Info Section styling */
+.info-section {
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #3b3f42; /* Blends with dark theme */
+  transition: background-color 0.3s ease;
+}
+
+.info-section:hover {
+  background-color: #859091 /* Accent color for hover */
+}
+
+.info-section p {
+  color: #d2f5ff; /* Softer gray for paragraph text */
+  text-align: center;
+  font-size: 17px;
+}
+
+.info-section h3,
+.info-section h2,
+.budget-info-section h2,
+.chart-info-section h2 {
+  margin: 0 0 10px;
+  text-align: center;
+  color: #080400; /* Subtle light gray for section headers */
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+
+
+.budget-info-section h2,
+.chart-info-section h2 {
+  font-size: 28px; /* Larger heading for key info */
+  margin: 20px;
+  color: rgb(201, 28, 123);
+}
+
+.info-card h4 {
+  font-size: 26px;
+  color:rgb(247, 230, 0);
+  padding:10px;
+  margin:10px;
+}
+
+.info-card h3{
+  font-size: 20px;
+  color:rgb(20, 213, 220);
+  
+}
+
+/* Dashboard content */
+.dashboard-content {
+  flex: 1;
+  padding: 30px;
+  background-color: #181818; /* Darker background to match the overall theme */
+}
+
+/* Grid layout for budget and chart cards */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 20px;
+}
+
+.info-card {
+  background-color: #25292b; /* Card color matching the sidebar */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #ffffff; /* White text for info card */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Modal styling for chart enlargement */
+.dashboard-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dashboard-modal-content {
+  background-color: #25292b;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 90%;
+  width: 600px;
+  color: #ffffff; /* White text in modal */
+}
+
+.dashboard-close {
+  color: #bbb;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.dashboard-close:hover,
+.dashboard-close:focus {
+  color: #ffffff; /* White on hover */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Button styles for actions like adding expenses or opening modals */
+.dashboard-link-button,
+.dashboard-signout-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #46c5c5;
+  border: none;
+  border-radius: 6px;
+  color: rgb(0, 14, 34); /* White text on buttons */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dashboard-link-button {
+  margin-left: 25px;
+  width: 150px;
+}
+.dashboard-signout-button {
+  margin-left: 40px;
+  width: 150px;
+}
+
+.dashboard-link-button:hover,
+.dashboard-signout-button:hover {
+  background-color: #80ecec; /* Darker blue on hover */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .dashboard-main-container {
+    flex-direction: column;
+  }
+
+  .sidebar-navigation {
+    width: 100%;
+    box-shadow: none;
+    border-right: none;
+  }
+
+  .dashboard-content {
+    padding: 15px;
+  }
+}

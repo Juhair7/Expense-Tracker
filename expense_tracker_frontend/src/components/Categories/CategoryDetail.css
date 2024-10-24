@@ -1,0 +1,64 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+
+.category-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('../../../public/assets/categoryDetail.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #343a40;
+}
+
+.category-detail-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.category-detail-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #063971;
+}
+
+.category-detail-content .category-detail-item {
+  margin: 10px 0;
+  font-size: 1.5em;
+  text-align: center;
+  color: #00060b;
+
+}
+
+.category-detail-close-button {
+  align-self: center;
+  margin: 20px;
+  padding: 10px 15x;
+  margin-left: 80px;
+  min-height: 35px;
+  width: 50%;
+  background-color: #053568;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-detail-close-button:hover {
+  background-color: #033b78;
+}

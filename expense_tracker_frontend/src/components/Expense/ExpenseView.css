@@ -1,0 +1,71 @@
+/* Container for the whole view */
+.expense-view-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../../../public/assets/expenseView.jpg'); /* Background image for the page */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  /* Styling the card */
+  .expense-card {
+    background-color: rgba(255, 255, 255, 0.7); /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Title styling */
+  .expense-view-title {
+    font-size: 2.1em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #4b0101;
+  }
+  
+  /* Details section styling */
+  .expense-details {
+    margin-bottom: 20px;
+  }
+  
+  .detail-item {
+    margin-bottom: 15px;
+    font-size: 1.6rem;
+    color: #2a2626;
+  }
+  
+  /* Loading message styling */
+  .loading-message {
+    font-size: 1.2em;
+    color: #555;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Back button styling */
+  .back-button {
+    display: inline-block;
+    background-color: #044274; /* Blue color */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .back-button:hover {
+    background-color: #145a86; /* Darker blue on hover */
+  }
+  

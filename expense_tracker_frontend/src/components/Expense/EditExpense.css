@@ -1,0 +1,118 @@
+/* Container for centering the form */
+.edit-expense-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f9fc;
+    padding: 20px;
+    background-image: url('../../../public/assets/updateExpense.jpg');
+    /* Background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* Card styling for the form */
+.edit-expense-form-card {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    max-width: 600px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    /* Apply Times New Roman */
+}
+
+/* Heading style */
+.edit-expense-form-card h2 {
+    font-size: 1.8rem;
+    color: #590707;
+    margin-bottom: 20px;
+}
+
+/* Form field styling */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #383232;
+    margin-bottom: 8px;
+    align-self: center;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 95%;
+    /* Ensure all input fields, select, and textarea have the same width */
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    font-family: 'Times New Roman', Times, serif;
+    /* Apply Times New Roman */
+    align-items: center;
+}
+
+.form-group select {
+    width: 99%;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Button group styling */
+.edit-expense-button-group {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Add space between the buttons */
+    margin-top: 20px;
+}
+
+
+
+/* Save button styles */
+.edit-expense-save-button,
+.edit-expense-cancel-button {
+    background-color: #16149c;
+    /* Green */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 30%;
+    /* Each button takes 48% width for spacing */
+    font-family: 'Times New Roman', Times, serif;
+    /* Apply Times New Roman */
+}
+
+
+.edit-expense-save-button:hover {
+    background-color: #13045a;
+}
+
+/* Cancel button styles */
+.edit-expense-cancel-button {
+    background-color: #860707;
+    /* Red */
+    color: white;
+}
+
+.edit-expense-cancel-button:hover {
+    background-color: #45040a;
+}

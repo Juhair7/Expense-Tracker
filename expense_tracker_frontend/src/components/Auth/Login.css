@@ -1,0 +1,106 @@
+.login-container {
+  background: rgba(255, 255, 255, 0.1);
+  background-image: url('../../../public/assets/logIn.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.login-form h2 {
+  color: #fdfdfe;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.login-input-field {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  background: rgba(134, 129, 129, 0.3);
+  border: 1px solid #ddd;
+  color: #e2e2e8;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.password-field-container {
+  position: relative;
+}
+
+
+.password-toggle {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #fbfdfd;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.password-toggle:hover {
+  color: #f5f8f8;
+}
+
+.login-input-field:focus {
+  border-color: #040964;
+  outline: none;
+  box-shadow: 0 0 5px rgba(107, 115, 255, 0.5);
+}
+
+.login-button {
+  margin: 20px;
+  width: 50%;
+  padding: 12px;
+  background-color: #060a63;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.login-button:hover {
+  background-color: #4B52CC;
+}
+
+.links-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.link:hover {
+  color: #68676b;
+}
+
+p {
+  color: white;
+  margin-top: 0px;
+}

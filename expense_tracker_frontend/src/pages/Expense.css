@@ -1,0 +1,60 @@
+/* Expense.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: #e3f2fd; /* Fallback color */
+    color: #333; /* Dark text color for better readability */
+  }
+  
+  .expense-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    height: 100vh; /* Full height of the viewport */
+    text-align: center; /* Center text alignment */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    background-image: url('../../public/assets/expense.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+  }
+  
+  .expense-title {
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 20px; /* Spacing below the title */
+    color: #151617; /* A calming blue color for the title */
+    text-shadow: 1px 1px 2px rgba(158, 145, 145, 0.2); /* Subtle shadow for title */
+  }
+  
+  .expense-buttons {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+  }
+  
+  .expense-button {
+    width: 220px; /* Fixed width for all buttons */
+    height: 50px; /* Fixed height for all buttons */
+    padding: 15px 0; /* Vertical padding for buttons */
+    margin: 10px 0; /* Space between buttons */
+    background-color: #093050; /* Blue background color for buttons */
+    color: white; /* White text color */
+    text-decoration: none; /* Remove underline */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow to buttons */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth background color and scale change */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 1rem; /* Font size for button text */
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .expense-button:hover {
+    background-color: #122536; /* Darker blue on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+  }
+  

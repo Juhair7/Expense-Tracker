@@ -1,0 +1,106 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.getbudget-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e3f2fd;
+  background-image: url('../../../public/assets/budgetDetail.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.getbudget-card {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 80%;
+  text-align: center;
+}
+
+.getbudget-close-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.getbudget-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #390808;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.getbudget-info p {
+  font-size: 1.4rem;
+  margin: 10px 0;
+  color: #1e023f;
+}
+
+.getbudget-info p strong {
+  color: #590606;
+}
+
+.getbudget-info p:nth-child(even) {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.getbudget-card p {
+  font-size: 1.4rem;
+  color: #120238;
+}
+
+.getbudget-card h2 {
+  color: #482d05;
+}
+
+
+.getbudget-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s;
+}
+
+.getbudget-close-button {
+  width: 120px;
+  height: 40px;
+  background-color: #05004b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.getbudget-close-button:hover {
+  background-color: #06153d;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .getbudget-card {
+    padding: 20px;
+  }
+
+  .getbudget-title {
+    font-size: 2rem;
+  }
+
+  .getbudget-info p {
+    font-size: 1rem;
+  }
+}

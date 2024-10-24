@@ -1,0 +1,69 @@
+.recovery-otp-container {
+  background: rgba(255, 255, 255, 0.1);
+  background-image: url('../../../public/assets/recoveryOtp.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.recovery-otp-form {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.recovery-otp-form h2 {
+  color: #080446;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.otp-input-field {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.password-container {
+  position: relative;
+}
+
+.eye-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #3e3b3b;
+}
+
+.recovery-otp-button {
+  margin: 20px 0;
+  width: 50%;
+  padding: 12px;
+  background-color: #060a63;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.recovery-otp-button:hover {
+  background-color: #0c0f3d;
+}

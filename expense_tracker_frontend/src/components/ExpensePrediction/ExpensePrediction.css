@@ -1,0 +1,87 @@
+/* Main container for full-page background */
+.expense-prediction-main-container {
+  background-image: url('../../../public/assets/expense-prediction.jpg'); /* Path to your background image */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the background image */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Use flexbox for centering */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+/* Container for the content */
+.expense-prediction-container {
+  padding: 30px;
+  color: #fff; /* Text color */
+  text-align: center;
+  backdrop-filter: blur(5px); /* Adds a blur effect behind the container */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  background-color: rgba(134, 161, 170, 0.3); /* Light blue background with transparency */
+}
+
+/* Title styling */
+.expense-prediction-container h1 {
+  font-size: 2.6rem;
+  margin: 20px;
+  color: #052325;
+}
+
+/* Table styling */
+.expese-prediction-table {
+  margin: 0 auto; /* Center the table */
+  border-collapse: separate; /* Separate borders to allow border-radius */
+  border-spacing: 0; /* Remove space between cells */
+  border-radius: 10px;
+  width: 80%; /* Adjust width as necessary */
+  background-color: rgba(190, 202, 218, 0.5); /* Make table background transparent */
+  overflow: hidden; /* Ensure that the table borders are rounded */
+}
+
+/* Table cells styling */
+.expese-prediction-table th,
+.expese-prediction-table td {
+  padding: 15px;
+  border: 1px solid #184658; /* Border for cells */
+  text-align: center;
+  color: #021c2b; /* White text color for table cells */
+  font-size: 1.6rem;
+}
+
+/* Header styling */
+.expese-prediction-table th {
+  background-color: #012c44; /* Darker blue for header background */
+  color: #ffffff; /* Header text color */
+  font-weight: bold;
+  font-size: 1.4rem;
+  
+}
+
+/* Table row styling */
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px; /* Bottom-left corner */
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px; /* Bottom-right corner */
+}
+
+.expense-prediction-close-button{
+  background-color: #628486;
+    color: black;
+    border: none;
+    margin :20px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 120px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.expense-prediction-close-button:hover{
+  background-color: #063336;
+  color:white
+}

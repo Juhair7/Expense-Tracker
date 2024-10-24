@@ -1,0 +1,193 @@
+/* Ensure Times New Roman font for the whole report */
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.report-main-container{
+    background-image: url('../../../public/assets/report.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.report-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.report-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.report-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.report-input {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.fetch-button {
+    padding: 10px 20px;
+    background-color: #021251;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.fetch-button:disabled {
+    background-color: #b0c4ff;
+}
+
+.report-modal {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 50px auto;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+
+/* Background overlay */
+.report-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 15;
+}
+
+.modal-header {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #020a27;
+}
+
+.report-summary {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.summary-card {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    transition: transform 0.3s ease;
+}
+
+.summary-card h4 {
+    margin-bottom: 10px;
+    color: #041b35;
+    text-align: center;
+}
+
+.summary-card p {
+    font-size: 1.2em;
+    color: #070fa9;
+}
+
+.summary-card:hover {
+    transform: scale(1.05);
+}
+
+/* Table Styling */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.report-table th, .report-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+    color: #020a27;
+}
+
+.report-table th {
+    background-color: #f1f3f5;
+}
+
+/* Modal Buttons */
+.modal-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.modal-button {
+    background-color: #05305d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 120px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.modal-button:hover {
+    background-color: #0056b3;
+}
+
+/* Loading and Error Text */
+.loading-text, .error-text {
+    text-align: center;
+    font-size: 18px;
+}
+
+.loading-text {
+    color: #333;
+}
+
+.error-text {
+    color: red;
+}
+
+/* Ensuring h4 titles are centered */
+h4 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(34, 1, 1);
+}

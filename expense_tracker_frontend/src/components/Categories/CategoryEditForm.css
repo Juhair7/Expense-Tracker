@@ -1,0 +1,105 @@
+/* Apply background image only to the container */
+.category-edit-main-container{
+    background-image: url('../../../public/assets/editCategory.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-edit-container {  
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    min-width: 450px;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+  }
+  
+  /* Title styling */
+  .category-edit-title {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the title */
+  }
+  
+  /* Form styling */
+  .category-edit-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #444;
+    align-self: center;
+  }
+  
+  /* Input styling */
+  .category-edit-input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.3s ease-in-out;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .category-edit-input:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Center the buttons */
+  .category-edit-buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 20px; /* Space between buttons */
+    margin-top: 20px;
+  }
+  
+  .update-button,
+  .category-edit-cancel-button {
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Update button styling */
+  .update-button {
+    background-color: #210161; /* Success green */
+    color: white;
+  }
+  
+  .update-button:hover {
+    background-color: #2a2188;
+  }
+  
+  /* Cancel button styling */
+  .category-edit-cancel-button {
+    background-color: #65040d; /* Danger red */
+    color: white;
+  }
+  
+  .category-edit-cancel-button:hover {
+    background-color: #8b0412;
+  }
+  

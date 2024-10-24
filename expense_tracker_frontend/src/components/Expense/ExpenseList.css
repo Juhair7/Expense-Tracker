@@ -1,0 +1,132 @@
+/* General Reset for Font */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Set the default font for the entire page */
+    margin: 0; /* Remove default margin */
+    height: 100vh; /* Full height */
+  }
+  
+  /* Background Image */
+  html, body {
+    background-image: url('../../../public/assets/viewExpenses.jpg'); /* Update this path to your image */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the image fixed during scroll */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    color: #343a40; /* Darker text for readability */
+  }
+  
+  .expense-list-container {
+    padding: 20px;
+    max-width: 80%;
+    min-height: auto;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.6); /* White background with some transparency */
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .expense-list-title {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #360202;
+  }
+  
+  .expense-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .expense-table th,
+  .expense-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .expense-table th {
+    background-color: #062e59; /* Primary color for header */
+    color: white;
+  }
+  
+  .expense-table td {
+    color: rgb(0, 0, 15);
+    font-size: 1.3rem;
+  }
+  
+  .expense-table tr:hover {
+    background-color: rgba(250, 249, 249, 0.6); /* Light gray on hover with transparency */
+  }
+  
+  /* Filter Section Styling */
+  .filter-section {
+    margin-bottom: 20px;
+  }
+  
+  .filter-section label {
+    margin-right: 10px;
+  }
+  
+  /* Filter Button Styling */
+  .apply-filter-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 35px;
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .apply-filter-button:hover {
+    background-color: #0056b3; /* Darker blue for hover */
+  }
+  
+  /* Action Button Styling */
+  .action-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin: 0 5px;
+    height: 35px;
+    width: 70px;
+    transition: background-color 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .view-button {
+    background-color: #18347a; /* Blue for view */
+  }
+  
+  .edit-button {
+    background-color: #dccb31; /* Yellow for edit */
+    color: black; /* Yellow for edit */
+  }
+  
+  .delete-button {
+    background-color: #650505; /* Red for delete */
+  }
+  
+  .view-button:hover {
+    background-color: #3f30cc; /* Darker blue */
+  }
+  
+  .edit-button:hover {
+    background-color: #e0a800; /* Darker yellow */
+  }
+  
+  .delete-button:hover {
+    background-color: #c82333; /* Darker red */
+  }
+  
+  /* Error Message Styling */
+  .error-message {
+    color: red;
+    text-align: center;
+    margin: 10px 0;
+  }
+  

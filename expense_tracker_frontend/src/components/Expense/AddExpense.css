@@ -1,0 +1,102 @@
+/* Background image only for the AddExpense page */
+.add-expense-main-container {
+    background-image: url('../../../public/assets/addExpense.jpg'); /* Background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-expense-container {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6); /* Semi-transparent background */
+    max-width: 600px;
+    margin: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Title styling */
+.add-expense-title {
+    font-size: 2.2em;
+    color: #333;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', serif; /* Set to Times New Roman */
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styling */
+.add-expense-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Input styling */
+.add-expense-input {
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    font-family: 'Times New Roman', serif; /* Set to Times New Roman */
+}
+
+/* Increase the size of the description box */
+.add-expense-input[name="description"] {
+    height: 100px; /* Make the description input taller */
+}
+
+.add-expense-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Center buttons and ensure equal size */
+.form-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between buttons */
+}
+
+.add-expense-submit-button,
+.add-expense-cancel-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 150px; /* Same width for both buttons */
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.add-expense-submit-button {
+    background-color: #3128a7;
+}
+
+.add-expense-submit-button:hover {
+    background-color: #190c68;
+}
+
+.add-expense-cancel-button {
+    background-color: #7b1721;
+}
+
+.add-expense-cancel-button:hover {
+    background-color: #56020b;
+}
+
+
+

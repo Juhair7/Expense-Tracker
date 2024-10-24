@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #f1f1f1;
+}
+
+.addbudget-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('../../../public/assets/addBudget.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.addbudget-form-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.addbudget-title {
+  font-size: 2.5rem;
+  color: #111d59;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.addbudget-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-control:focus {
+  border-color: #073460;
+  outline: none;
+}
+
+
+.addbudget-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.addbudget-button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: #032f5b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  width: 48%;
+}
+
+.addbudget-button:hover {
+  background-color: #112c46;
+  transform: translateY(-3px);
+}
+
+.cancel-button {
+  background-color: #750404;
+  width: 48%;
+}
+
+.cancel-button:hover {
+  background-color: #4a0d0b;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}

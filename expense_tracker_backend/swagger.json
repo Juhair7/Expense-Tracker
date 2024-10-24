@@ -1,0 +1,113 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Daily Expense Tracker API",
+      "description": "API documentation for the Daily Expense Tracker application"
+    },
+    "host": "localhost:5000",
+    "basePath": "/api",
+    "schemes": ["http"],
+    "paths": {
+      "/auth/signup": {
+        "post": {
+          "tags": ["Authentication"],
+          "summary": "Sign up a new user",
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/SignUp"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful sign up"
+            }
+          }
+        }
+      },
+      "/auth/login": {
+        "post": {
+          "tags": ["Authentication"],
+          "summary": "Log in an existing user",
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/Login"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+              "description": "Successful login"
+            }
+          }
+        }
+      },
+      "/expenses/add": {
+        "post": {
+          "tags": ["Expenses"],
+          "summary": "Add a new expense",
+          "parameters": [
+            {
+              "name": "body",
+              "in": "body",
+              "required": true,
+              "schema": {
+                "$ref": "#/definitions/Expense"
+              }
+            }
+          ],
+          "responses": {
+            "200": {
+            }
+          }
+        }
+      },
+      "/expenses/all": {
+        "get": {
+          "tags": ["Expenses"],
+          "summary": "Get all expenses for the logged-in user",
+          "responses": {
+            "200": {
+              "description": "List of expenses"
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "SignUp": {
+        "type": "object",
+        "properties": {
+          "username": { "type": "string" },
+          "password": { "type": "string" },
+          "mobile": { "type": "string" },
+          "securityQuestion": { "type": "string" }
+        }
+      },
+      "Login": {
+        "type": "object",
+        "properties": {
+          "username": { "type": "string" },
+          "password": { "type": "string" }
+        }
+      },
+      "Expense": {
+        "type": "object",
+        "properties": {
+          "amount": { "type": "number" },
+          "description": { "type": "string" },
+          "category": { "type": "string" }
+        }
+      }
+    }
+  }
+  

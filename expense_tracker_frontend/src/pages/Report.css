@@ -1,0 +1,67 @@
+/* Report.css */
+
+.report-page-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    background-image: url('../../public/assets/Home.jpg') ;/* Replace with your image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Text color */
+    padding: 20px;
+}
+
+.report-page-container {
+    text-align: center; /* Center align text */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    padding: 40px; /* Padding for inner content */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.report-page-title {
+    font-size: 2.5rem; /* Larger title font size */
+    margin-bottom: 20px; /* Spacing below the title */
+}
+
+.report-page-description {
+    font-size: 1.25rem; /* Slightly larger description font size */
+    margin-bottom: 30px; /* Spacing below the description */
+}
+
+.report-page-subtitle {
+    font-size: 1.8rem; /* Subtitle font size */
+    margin: 20px 0; /* Spacing around subtitles */
+}
+
+.report-page-features,
+.report-page-report-types {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    font-size: 1.1rem; /* Font size for list items */
+}
+
+.report-page-features li,
+.report-page-report-types li {
+    margin: 10px 0; /* Spacing between list items */
+}
+
+.report-page-instructions {
+    font-size: 1.1rem; /* Instructions font size */
+    margin: 20px 0; /* Spacing around instructions */
+}
+
+.report-page-button {
+    background-color: #031e3d; /* Bootstrap primary color */
+    color: white; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Button padding */
+    font-size: 1rem; /* Button font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.report-page-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

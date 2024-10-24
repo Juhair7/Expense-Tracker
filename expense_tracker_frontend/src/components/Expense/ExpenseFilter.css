@@ -1,0 +1,83 @@
+/* Container for the filters */
+.filter-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(244, 242, 242, 0.15);
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .filter-container:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Title styling */
+  .filter-title {
+    font-size: 1.8rem;
+    color: #000535;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Grouping each filter input and button */
+  .filter-group {
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Input fields styling */
+  .filter-input {
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 8px;
+    width: 60%;
+    font-size: 1rem;
+    background-color: #ffffff;
+    box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    outline: none;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .filter-input:focus {
+    border-color: #626167;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+  }
+  
+  .filter-input:hover {
+    background-color: #f9f9f9;
+  }
+  
+  /* Button styling */
+  .filter-button {
+    padding: 12px 24px;
+    background-color: #02103f;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .filter-button:hover {
+    background-color: #0a2a6e;
+  }
+  
+  .filter-button:active {
+    background-color: #100439;
+    transform: translateY(2px);
+  }
+  
+  
+  

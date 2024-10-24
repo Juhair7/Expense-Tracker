@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: #e3f2fd;
+  color: #333;
+}
+
+.budgetlist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  background-image: url('../../../public/assets/updateMonthlyBudget.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.budgetlist-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #3a0000;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.budgetlist-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.budgetlist-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
+  flex: 1 1 calc(33.33% - 40px);
+  max-width: 300px;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.budgetlist-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+
+}
+
+.budgetlist-view-button,
+.budgetlist-update-button {
+  width: 120px;
+  height: 40px;
+  background-color: #2e0e00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+  margin: 0 5px;
+  font-size: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.budgetlist-view-button {
+  background-color: rgb(32, 32, 36);
+}
+
+
+.budgetlist-view-button:hover {
+  background-color: #2e0e00;
+  transform: translateY(-2px);
+}
+
+.budgetlist-update-button:hover {
+  background-color: #25221d;
+  transform: translateY(-2px);
+}

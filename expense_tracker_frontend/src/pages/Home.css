@@ -1,0 +1,74 @@
+.home-container {
+    background-image: url('../../public/assets/HomePage.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; /* Updated font */
+  }
+  
+  .content {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay for better readability */
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 600px;
+  }
+  
+  .welcome-text {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .app-info {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .login-btn, .signup-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; /* Slightly more rounded corners */
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added a scale effect */
+  }
+  
+  /* New color styles for buttons */
+  .login-btn {
+    background-color: #2c0101; /* Bright red-orange */
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .signup-btn {
+    background-color: #070f77; /* Bright orange-yellow */
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Hover effects */
+  .login-btn:hover {
+    background-color: #470101; /* Darker red-orange */
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  
+  .signup-btn:hover {
+    background-color: #0e1f53; /* Darker orange-yellow */
+    transform: scale(1.05); /* Slight scale effect on hover */
+  }
+  

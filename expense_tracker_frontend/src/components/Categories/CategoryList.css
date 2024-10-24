@@ -1,0 +1,98 @@
+/* General Reset for Font */
+body {
+  font-family: 'Times New Roman', Times, serif; /* Set the default font for the entire page */
+  margin: 0; /* Remove default margin */
+  height: 100vh; /* Full height */
+}
+
+/* Background Image */
+html, body {
+  background-image: url('../../../public/assets/categoryList.jpg'); /* Update this path to your image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  background-attachment: fixed; /* Keep the image fixed during scroll */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  color: #343a40; /* Darker text for readability */
+}
+
+.category-list-container {
+  padding: 20px;
+  max-width: 80%;
+  min-height: auto;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.6); /* White background with some transparency */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category-list-title {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.category-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.category-table th,
+.category-table td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #dee2e6;
+  border-radius: 2px;
+  border-spacing: 0; 
+}
+
+.category-table th {
+  background-color: #062e59; /* Primary color for header */
+  color: white;
+}
+
+.category-table td{
+  color:rgb(0, 0, 15);
+  font-size: 1.3rem;
+}
+
+.category-table tr:hover {
+  background-color: rgba(250, 249, 249, 0.6); /* Light gray on hover with transparency */
+}
+
+.action-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin: 0 5px;
+  height: 35px;
+  width: 70px;
+  transition: background-color 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.view-button {
+  background-color: #18347a; /* Green for view */
+}
+
+.edit-button {
+  background-color: #dccb31;
+  color: black; /* Yellow for edit */
+}
+
+.delete-button {
+  background-color: #650505cb; /* Red for delete */
+}
+
+.view-button:hover {
+  background-color: #3f30cc; /* Darker green */
+}
+
+.edit-button:hover {
+  background-color: #e0a800; /* Darker yellow */
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Darker red */
+}

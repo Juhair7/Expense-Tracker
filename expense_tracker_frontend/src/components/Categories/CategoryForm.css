@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', serif; /* Set font to Times New Roman */
+    background: #e3f2fd; /* Light blue background */
+    color: #333; /* Dark gray text color */
+  }
+  
+  .category-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('../../../public/assets/createCategory.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .category-form-card {
+    background-color: rgba(255, 255, 255, 0.6); /* Slightly transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    width: 90%;
+    max-width: 400px; /* Max width of the card */
+    text-align: center;
+  }
+  
+  .category-form-title {
+    font-size: 2.5rem; /* Font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+    color: #590606; /* Dark red color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  }
+  
+  .category-form {
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+  }
+  
+  .category-form-label {
+    margin: 10px 0; /* Space around labels */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0d0029; /* Font size for labels */
+  }
+  
+  .category-form-input {
+    padding: 10px; /* Padding for inputs */
+    margin: 10px 0; /* Space around inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .category-form-input:focus {
+    border-color: #561d05; /* Darker border color on focus */
+    outline: none; /* Remove outline on focus */
+  }
+  
+  .category-form-buttons {
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+    margin-top: 20px; /* Space above buttons */
+  }
+  
+  .create-category-button,
+  .cancel-button {
+    padding: 10px 15px; /* Padding for buttons */
+    background-color: #1d1270; /* Dark red background for buttons */
+    color: white; /* White text color */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    font-size: 1rem; /* Font size for buttons */
+    flex: 1; /* Make buttons the same width */
+    margin: 0 5px; /* Space between buttons */
+  }
+  
+  .create-category-button:hover {
+    background-color: #3a1396; /* Darker background on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .cancel-button {
+    background-color: #a70101; /* Tomato background for cancel button */
+  }
+  
+  .cancel-button:hover {
+    background-color: #bf1a1a; /* Darker tomato on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .readonly-input {
+    cursor: not-allowed; /* Cursor indicating the field is not editable */
+  }
+  
